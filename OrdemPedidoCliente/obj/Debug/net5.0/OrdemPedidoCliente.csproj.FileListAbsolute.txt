@@ -1,0 +1,16 @@
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\bin\Debug\net5.0\OrdemPedidoCliente.exe
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\bin\Debug\net5.0\OrdemPedidoCliente.deps.json
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\bin\Debug\net5.0\OrdemPedidoCliente.runtimeconfig.json
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\bin\Debug\net5.0\OrdemPedidoCliente.runtimeconfig.dev.json
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\bin\Debug\net5.0\OrdemPedidoCliente.dll
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\bin\Debug\net5.0\OrdemPedidoCliente.pdb
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.csproj.AssemblyReference.cache
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.AssemblyInfoInputs.cache
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.AssemblyInfo.cs
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.csproj.CoreCompileInputs.cache
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.dll
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\refint\OrdemPedidoCliente.dll
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.pdb
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\OrdemPedidoCliente.genruntimeconfig.cache
+C:\PortfolioGitHub\OrdemPedidoCliente\OrdemPedidoCliente\obj\Debug\net5.0\ref\OrdemPedidoCliente.dll
