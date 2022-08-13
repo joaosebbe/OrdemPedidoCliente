@@ -7,36 +7,37 @@ namespace OrdemPedidoCliente {
     internal class Program {
         static void Main(string[] args) {
             #region Entrando com os dados do cliente
-            Cliente cliente = new();
             
             Console.WriteLine("Entre com os dados do cliente:");
             Console.Write("Nome: ");
-            cliente.Nome = Console.ReadLine();
+            string nome = Console.ReadLine();
             Console.Write("Email: ");
-            cliente.Email = Console.ReadLine();
+            string email = Console.ReadLine();
             Console.Write("Data nascimento: ");
-            cliente.DataAniversario = DateTime.Parse(Console.ReadLine());
-            
+            DateTime dataNascimento = DateTime.Parse(Console.ReadLine());
+
+            Cliente cliente = new Cliente(nome, email, dataNascimento);
+
             Console.WriteLine();
+
             #endregion
 
-            #region Entrando com o status e quantidade de pedido a ser inserido
-            Pedido pedido = new();
+            #region Entrando com o status e quantidade de itens a ser inseridos
 
             Console.WriteLine("Entre com os dados do pedido:");
             Console.Write("Status(Pagamento_Pendente, Processando, Enviado, Entregue): ");
             PedidoStatus status = Enum.Parse<PedidoStatus>(Console.ReadLine());
+
+            Pedido pedido = new Pedido(DateTime.Now, status, cliente);
+
             Console.Write("Quantos itens tem esse pedido?");
             int itens = int.Parse(Console.ReadLine());
 
-            pedido.Momento = DateTime.Now;
-            pedido.Status = status;
-            pedido.Cliente = cliente;
+            Console.WriteLine();
+
             #endregion
 
             #region Entrando com o nome, preço e quantidade de cada item do pedido e adicionando na lista
-
-            Console.WriteLine();
 
             for (int i = 0; i < itens; i++)
             {
@@ -53,30 +54,30 @@ namespace OrdemPedidoCliente {
 
                 pedido.AddItem(pedidoItem);
             }
-            #endregion
 
-            #region Exibindo o sumário com informações do pedido e cliente
             Console.WriteLine();
 
-            Console.WriteLine("SUMÁRIO DO PEDIDO:");
-            Console.WriteLine("Momento do pedido: " + pedido.Momento);
-            Console.WriteLine("Status do pedido: " + pedido.Status);
-            Console.WriteLine("Cliente: " + pedido.Cliente.Nome + " (" + string.Format("{0:dd/MM/yyyy}", pedido.Cliente.DataAniversario) + ")" + " - " + pedido.Cliente.Email);
-
             #endregion
 
-            #region Exibindo os itens com o nome, preço, quantidade, subtotal.E por fim, o total do pedido
+            #region Exibindo o sumário com informações do pedido e cliente; Exibindo os itens com o nome, preço, quantidade, subtotal.E por fim, o total do pedido
+
+            Console.WriteLine("SUMÁRIO DO PEDIDO:");
+            Console.WriteLine(pedido);
+
             Console.WriteLine();
 
             Console.WriteLine("Itens do Pedido:");
 
             foreach(PedidoItem item in pedido.PedidoItem)
             {
-                Console.WriteLine(item.Produto.Nome + ", $" + item.Preco + ", Quantidade: " + item.Quantidade + ", Subtotal: $" + item.SubTotal()); ;
+                Console.WriteLine(item.Produto.Nome + ", $" + item.Preco + " , Quantidade: " + item.Quantidade + ", Subtotal: $" + item.SubTotal().ToString("F2")); ;
             }
             Console.WriteLine();
 
-            Console.WriteLine("Preço Total: $" + pedido.Total());
+            Console.WriteLine("Preço Total: $" + pedido.Total().ToString("F2"));
+            
+            Console.WriteLine();
+
             #endregion
         }
     }

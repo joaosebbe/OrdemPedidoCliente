@@ -10,18 +10,18 @@ namespace OrdemPedidoCliente.Entidades
     {
         public string Nome { get; set; }
         public string Email { get; set; }
-        public DateTime DataAniversario { get; set; }
+        public DateTime DataNascimento { get; set; }
 
         public Cliente()
         {
 
         }
 
-        public Cliente(string nome, string email, DateTime dataAniversario)
+        public Cliente(string nome, string email, DateTime dataNascimento)
         {
             Nome = nome;
             Email = email;
-            DataAniversario = dataAniversario;
+            DataNascimento = dataNascimento;
         }
     }
 }

@@ -6,3 +6,4 @@ Exibindo na tela primeiramente as informações do pedido (momento, status, dado
 
 Este é um exercício de fixação trabalhando com Enumerações e Composição de um curso de C# PROGRAMAÇÃO ORIENTADA A OBJETOS na UDEMY ministrado por Nelio Alves.
 
+![image-20220812223833029](C:\Users\João\AppData\Roaming\Typora\typora-user-images\image-20220812223833029.png)

@@ -42,5 +42,16 @@ namespace OrdemPedidoCliente.Entidades
             }
             return sum;
         }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("Momento do pedido: " + Momento);
+            sb.AppendLine("Status do pedido: " + Status);
+            sb.AppendLine("Cliente: " + Cliente.Nome + " (" + string.Format("{0:dd/MM/yyyy}", Cliente.DataNascimento) + ")" + " - " + Cliente.Email);
+
+
+            return sb.ToString();
+        }
     }
 }
